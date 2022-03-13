@@ -1,12 +1,12 @@
 // Prompt que solicita un número entre 1 y 20
-let num = +prompt("Por favor, ingrese un número entre 1 y 20");
+let num = parseInt(prompt("Por favor, ingrese un número entre 1 y 20"));
 
 // Función que verifica el rango del número ingresado
 const check = (number) => {
     if (number >= 1 && number <= 20) {
 
         // Ciclo for para multiplicar el numero ingresado
-        for (let multiplier = 1; multiplier <= number; multiplier++) {
+        for (let multiplier = 1; multiplier <= 12; multiplier++) {
             console.log(`${multiplier} x ${number} = ${multiplier * number}`);
         }
 
